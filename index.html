@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TLDR</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+<nav class="tab-bar">
+<button data-tab="tldr" class="active">TLDR</button>
+<button data-tab="in-depth-notes">In-depth Notes</button>
+</nav>
+<div class="panel active" data-panel="tldr">
+<h1 id="tldr">TLDR</h1>
+<p>2 fireball patterns, just like in normal:</p>
+<ul>
+<li>Horizontal orientation start</li>
+<li>Vertical orientation start</li>
+</ul>
+<p>1 fireball set is comprised of 5 fireballs, as opposed to the normal 3.</p>
+<p>Whichever orientation the set starts with is what it ends with — knowing this helps you anticipate the last fireball dodge.</p>
+<p>A single Yama rotation can be partitioned using each fireball set spawn as the split point, giving us 3 parts:</p>
+<ul>
+<li>Part 1: fireballs + waves 2/3 + flares</li>
+<li>Part 2: fireballs + flares (no waves)</li>
+<li>Part 3: fireballs [+ wave 1]</li>
+</ul>
+<p>This repeats indefinitely.</p>
+<p>Each part contains 4 autos total.</p>
+<p>The 1st auto for each part happens at the same time relative to the 1st fireball.</p>
+<p>The starting auto/prayer depends on glyph spawns. If p1/2 had 3 fire glyphs then the kill is <em>fire major</em>, and the starting prayer will be mage; conversely, 3 shadow glyphs make it <em>shadow major</em> — range prayer.</p>
+<h2 id="getting-to-the-grid">Getting to the Grid</h2>
+<p>After you're back in Yama's area, do 1 auto and make your way to <code>start</code>. I chose this tile because most of the movement here sits on top of the glyph, so these tiles are never accidentally ragged during p1/2.</p>
+<p>1st fireball: move forward or to the right, depending on orientation.</p>
+<p>As you can see in the clips, each subsequent step is towards the right (south-x), never left (north-x).</p>
+<p><img src="assets/imgs/start-h.png" width=460px></p>
+<p><img src="assets/imgs/start-v.png" width=460px></p>
+<p>The moment you see the last fireball, click the <code>top-left</code> (marked <code>x</code>) tile of the grid. You don't have to dodge the wave here as you'll have immunity from it, so you can switch to your purge staff and prepare for the flares.</p>
+<h2 id="part-1">Part 1</h2>
+<ul>
+<li>Reference vid: <a href="https://youtu.be/FQ06x422lrs">https://youtu.be/FQ06x422lrs</a></li>
+</ul>
+<p>Fireballs + waves 2/3 + flares.</p>
+<p>To make this more manageable, you can break it into 2 steps. The 1st step deals with the opening 3 fireballs and gets you ready for the ctrl-walk. The 2nd step is the ctrl-walk itself and finishing up.</p>
+<p>Important — dodge the fireball on the correct tick:</p>
+<ul>
+<li>Tick 1: fireball spawns;</li>
+<li>Tick 2: you click tile to dodge.</li>
+</ul>
+<p>(Don't react and dodge on tick 1)</p>
+<h3 id="step-1">Step 1</h3>
+<p>[Each of these must be done before you have to dodge the subsequent fireball]</p>
+<ul>
+<li>Dodge 1st fireball → spec flare → (click spec-orb + change prayer):</li>
+</ul>
+<p><img src="assets/imgs/core-1st-pt.gif" width=500px></p>
+<ul>
+<li>Dodge 2nd fireball → spec [2nd] flare → click spec-orb on xp drop;</li>
+<li>Dodge 3rd fireball → spec [3rd] flare;</li>
+</ul>
+<p><strong>Vertical fireball</strong></p>
+<div class="grid-path" data-path="0,1,3,0" data-allheads data-speed="0.6" data-color="#bf616a" data-autoplay></div>
+
+<p><strong>Horizontal fireball</strong></p>
+<div class="grid-path" data-path="0,3,1,0" data-allheads data-speed="0.6" data-color="#bf616a" data-autoplay></div>
+
+<h3 id="step-2">Step 2</h3>
+<p>Ctrl-walk to the bottom-middle tile.</p>
+<div class="grid-path" data-path="0,3,7" data-style="dotted" data-speed="0.6" data-color="#5e81ac"></div>
+
+<ul>
+<li>Ctrl-walk to tile → use the free tick to [switch prayers + click spec-orb];</li>
+<li>Click last flare when you land on tile..</li>
+</ul>
+<p>Take it slow — try to execute 1 of these points perfectly at a time.</p>
+<h3 id="wave-3">Wave 3</h3>
+<p>After the last flare, you have to dodge the final fireball (either H or V).</p>
+<p><em>After</em> dodging, <strong>click</strong> the <code>bottom-right</code> tile <em>on</em> the fireball's shadow crash, then watch the left wave and dodge accordingly.</p>
+<p><img src="assets/imgs/btm-right.gif" width=500px></p>
+<h2 id="part-2">Part 2</h2>
+<p>This part is just fireballs + flares.</p>
+<p>You can do whatever movement here as long as it doesn't take you out of the grid. I prefer the following as it gets me closer to the start of the next part.</p>
+<p><strong>Vertical</strong></p>
+<div class="grid-path" data-path="3,4,6,3,7,8" data-allheads data-style="solid" data-speed="0.6" data-color="#5e81ac"></div>
+
+<p><strong>Horizontal</strong></p>
+<div class="grid-path" data-path="3,6,4,3,7,4" data-allheads data-style="solid" data-speed="0.5" data-color="#5e81ac"></div>
+
+<p>(Move to <code>8</code> after last flare <em>if</em> horizontal.)</p>
+<p>If you didn't make any mistakes in the previous part and are on tick, you'll land 2 shadows after the 1st fireball spawns.</p>
+<ul>
+<li>Equip purge staff on the xp drop of your 2nd shadow;</li>
+<li>Dodge fireball, then click spec-orb;</li>
+<li>Spec flares.</li>
+</ul>
+<p><img src="assets/imgs/2sbg.gif" width=500px></p>
+<h2 id="part-3">Part 3</h2>
+<p>With this method, we get wave immunity from the single wave and land on the starting tile for core waves.</p>
+<p><strong>Horizontal</strong></p>
+<div class="grid-path" data-path="8,5,6,7,3,0" data-allheads data-style="solid" data-speed="0.65" data-color="#5e81ac"></div>
+
+<p><strong>Vertical</strong></p>
+<div class="grid-path" data-path="8,7,2,5,1,0" data-allheads data-style="solid" data-speed="0.65" data-color="#5e81ac"></div>
+
+<p>In-game clip: <a href="https://youtu.be/YgAF3C4EsrI">https://youtu.be/YgAF3C4EsrI</a></p>
+</div>
+<div class="panel" data-panel="in-depth-notes">
+<h1 id="in-depth-notes">In-depth Notes</h1>
+<p>[This was written before <code>TLDR</code> so there will be some overlap.]</p>
+<h2 id="the-yama-cycle">The Yama Cycle</h2>
+<p>A single Yama rotation can be partitioned using its 3 fireball sets:</p>
+<ul>
+<li><strong>Part 1 (Core Waves)</strong>: Fireballs + waves 2/3 + flares</li>
+<li><strong>Part 2 (Flares only)</strong>: Fireballs + flares (no waves)</li>
+<li><strong>Part 3 (Single Wave)</strong>: Fireballs [+ wave 1]</li>
+</ul>
+<p>The starting auto/prayer depends on glyph spawns. 3 fire glyphs make the kill <em>fire major</em>; 3 shadow glyphs make it <em>shadow major</em>. This distinction determines your auto-attack order throughout the fight.</p>
+<p>If we treat autos as occurring in pairs, each part comprises 2 pairs — 4 autos in total. In a fire major, for instance, this reads: (mage → range) → (mage → range).</p>
+<p>The cycle repeats indefinitely, provided you don't get melee'd.</p>
+<h2 id="fireball-rotations">Fireball Rotations</h2>
+<p>There are only 2 rotations: <strong>horizontal</strong> and <strong>vertical</strong>.</p>
+<p>Whatever the fireballs start with is what they end with.</p>
+<p><strong>Rotation 1 (Horizontal start):</strong>
+H → \ → V → / → H</p>
+<p><strong>Rotation 2 (Vertical start):</strong>
+V → \ → H → / → V</p>
+<ul>
+<li><code>\</code> denotes the negative 45° fireball orientation</li>
+<li><code>/</code> denotes the positive 45°.</li>
+</ul>
+<p><img src="assets/imgs/h_rota.png" width=700></p>
+<p><img src="assets/imgs/v_rota.png" width=700></p>
+<h2 id="wave-mechanics-variations">Wave Mechanics &amp; Variations</h2>
+<p><img src="assets/imgs/wave_cols.png" width=220></p>
+<p>The left and right waves are independent of one another (credits to <code>14Pool13Gas</code>).</p>
+<ul>
+<li>If the left wave (<code>l</code>) is 1 tick "late", the intersection occurs in the <strong>L</strong> (left) column.</li>
+<li>If the right wave (<code>r</code>) is 1 tick "late", the intersection occurs in the <strong>R</strong> (right) column.</li>
+<li>If both arrive on time, they intersect in <strong>C</strong> (center).</li>
+<li>If both arrive 1 tick late, you get a delayed intersection in center — what we like to refer to as <strong>CS</strong> (center scuffed).</li>
+</ul>
+<p><img src="assets/imgs/wave_mechs.png" width=740></p>
+<p>I'll use the following notation throughout:</p>
+<ul>
+<li><strong>w1</strong>, <strong>w2</strong>, <strong>w3</strong>: the 1st, 2nd, and 3rd sets of waves, each being a pair: (l, r).</li>
+<li><strong>rN</strong> / <strong>lN</strong>: the individual right or left wave in a given set, where N is the wave number (2 or 3). For example, <code>r3</code> refers to the right wave in <code>w3</code>.</li>
+</ul>
+<p>The L, R, C, and CS variations apply to <code>w2</code> and <code>w3</code>, whereas <code>w1</code> is always a C.</p>
+<h2 id="basic-wave-immunity">Basic Wave Immunity</h2>
+<p>This topic is still a work-in-progress, but the core principle is: you gain wave immunity on the tick immediately following the shadow crash from a fireball.</p>
+<h2 id="the-method">The Method</h2>
+<p>Call it whatever you like, I refer to the overall thing as the <strong>5-5 cycle</strong>, and will be referring to the <code>pt1</code> method as <strong>core waves cycle</strong>.</p>
+<p>Compared to Gnomemonkey's gridlock method, this method:</p>
+<ul>
+<li>Lets you get 5 shadow's off before and after <code>pt2</code>;</li>
+<li>Requires fewer actions;</li>
+<li>Thus mechanically easier while yielding more;</li>
+<li>Does not require you to leave the grid.</li>
+</ul>
+<p>A note on tick alignment: when entering <code>pt1</code>, you can be on 1 of 3 ticks relative to the fireball cycle (since fireballs operate on a 3-tick interval). Depending on which tick you're on, the timing of your attacks in subsequent parts may shift accordingly. For now, I'll focus on the <strong>Tick 2 cycle</strong> — the main one. Ticks 1 and 3 are more advanced, still being refined, and not essential to learn first. For reference:</p>
+<ul>
+<li><strong>Tick 1</strong>: the react tick</li>
+<li><strong>Tick 2</strong>: the standard (covered here)</li>
+<li><strong>Tick 3</strong>: delayed orb spec'ing (adv.—let's you do 6-5)</li>
+</ul>
+<p>One final note: each part begins on your major prayer. If the kill is fire major, every part opens with mage prayer, and vice versa.</p>
+<h3 id="part-1">Part 1</h3>
+<p>This is where you spec the flares whilst having to deal with the waves. You actually have a few ticks of breathing room before the spec'ing begins, those running hard food can use this window to eat after the 5th shadow of <code>pt3</code> (shown in <code>5-5 afk cycle</code> video).</p>
+<p>Reference vids:</p>
+<ul>
+<li><a href="https://youtu.be/xPkMceNOb88">https://youtu.be/xPkMceNOb88</a> (old)</li>
+<li><a href="https://youtu.be/FQ06x422lrs">https://youtu.be/FQ06x422lrs</a> (recent)</li>
+</ul>
+<p>The process runs as follows:</p>
+<ul>
+<li><strong>t1:</strong> Fireball spawns</li>
+<li><strong>t2:</strong> You move to dodge</li>
+<li><strong>t3:</strong> Spec the flare</li>
+<li><em>...rest of the rotation...</em></li>
+</ul>
+<p><img src="assets/imgs/seg2_h.png" width=700></p>
+<p><img src="assets/imgs/seg2_vert.png" width=710></p>
+<p>A note on prayer switching: your switches will always align with one of your spec timings, so you're better off combining the two actions.</p>
+<p>Also take advantage of the free tick given by ctrl-walk to click your spec and switch prayers as your character begins moving, which makes clicking the final orb essentially idle.</p>
+<p>It's worth mentioning that you're not always <em>dodging</em> <code>w2</code> and <code>w3</code> outright. Depending on the variation, it's a combination of dodging and wave immunity.</p>
+<p>With that understood: moving to bottom-right (for <code>w3</code>) on the exact tick it's safe to do so (safe from shadow crash) will either dodge <code>r3</code> or grant immunity, depending on the variation.</p>
+<p>The method handles all <code>w2</code> variations automatically via the ctrl-walk. The only thing you'll need to learn separately is how to solve <code>w3</code>.</p>
+<p>Referring to this grid again for <code>w3</code> solves:</p>
+<p><img src="assets/imgs/grid_labelled.png" width=200></p>
+<p><strong><code>w3</code> solves:</strong></p>
+<p>The timing to move to tile <code>8</code> is always the same. What varies is the timing to move to tile <code>7</code>:</p>
+<ul>
+<li><strong>R or C</strong> — move to <code>7</code> immediately after hitting <code>8</code> (no delay).</li>
+<li><strong>L or CS</strong> — delay 1 tick before moving to <code>7</code>.</li>
+</ul>
+<p>In practice, you'll come to feel the left wave (<code>l3</code>) sitting further away, and this will naturally tell you when to delay.</p>
+<p>Accompanying vid: <a href="https://youtu.be/L34DW9iNKxk">https://youtu.be/L34DW9iNKxk</a></p>
+<ul>
+<li>Has all <code>pt1</code> variations concerning <code>w3</code> (consists of 2 separate example clips for each).</li>
+</ul>
+<p><strong>Remarks:</strong></p>
+<ul>
+<li>I never consciously identify whether the variation is L, R, C, or CS. I move to <code>8</code>, then to <code>7</code>, and delay a tick if the left wave tells me to.</li>
+<li>When solving <code>w3</code>, always dodge to bottom-middle (tile <code>7</code>) and never further than that, as <code>r3</code> can catch you if you're not attentive to the variation.</li>
+<li>You can also click tile <code>8</code> on your shadow XP drop, provided you spec'd the last flare upon reaching tile <code>7</code> via ctrl-walk, and shadow'd boss right after without losing ticks.</li>
+</ul>
+<h3 id="part-2">Part 2</h3>
+<p>There are several ways to move around the grid during this part. I prefer a path that brings me close to the <code>pt3</code> starting tile.</p>
+<p>There isn't much to elaborate on here, simply spec the flares.</p>
+<p>The process:</p>
+<ul>
+<li>Switch to purge on the XP drop of your 5th/last shadow, or after the 2nd fireball but before the 3rd;</li>
+<li>Dodge the 3rd fireball;</li>
+<li>Begin spec'ing.</li>
+</ul>
+<p><img src="assets/imgs/seg3_v.gif" width=400></p>
+<p><img src="assets/imgs/seg3_h.gif" width=400></p>
+<h3 id="part-3">Part 3</h3>
+<p>This part begins when you've finished spec'ing flares from <code>pt2</code>. As such, you'll be predominantly shadowing throughout.</p>
+<p><img src="assets/imgs/seg1_rota.png" width=700></p>
+<p>Your goal is to move to the <code>start</code> tile after the final <code>pt2</code> fireball.</p>
+<p>Your attack will land on 1 of 3 ticks relative to the fireball:</p>
+<ol>
+<li><strong>Tick 1 (React):</strong> You react to the fireball. Your shadow XP drop comes 1 tick after the 1st fireball — i.e., <code>t1</code>: fireball spawns and you react to H/V by clicking a tile to dodge; <code>t2</code>: your character moves and you click the boss; <code>t3</code>: XP drop.</li>
+<li><strong>Tick 2:</strong> Your shadow XP drop lands 2 ticks after the 1st fireball spawns.</li>
+<li><strong>Tick 3:</strong> Your shadow XP drop on the same tick as the 1st fireball spawn.</li>
+</ol>
+<p>If you execute <code>pt1</code> and <code>pt2</code> correctly, you'll naturally land on <strong>Tick 3</strong>. However, tick loss from mistakes or eating can place you on Tick 1 or 2 instead.</p>
+<p><strong>On Ticks 2 and 3</strong>, you can drop the 3rd fireball on <em>an</em> exact tick, allowing you to dodge on that same tick and pick up the speed buff from the 2nd fireball.</p>
+<p><strong>On Tick 1</strong>, this isn't possible — your 2nd shadow XP drop will occur on the same tick the 3rd fireball spawns. That 2nd shadow was 4-tick due to the 1st fireball, so you don't actually lose anything: the 2nd fireball drops on the tick that would have rendered the buff useless anyway. Your 3rd shadow will also be 4-tick (due to the 3rd fireball), meaning all 5 of your shadow hits during this part will be 4-tick regardless. This is worth noting because the same logic <em>doesn't</em> apply to Ticks 2 and 3 — for those, you need to drop on the exact tick <em>and</em> move on that same tick to benefit from the 2nd fireball's buff.</p>
+<p>All of that said, the real purpose of starting bottom-right is to make it easier to gain immunity from <code>w1</code>. So the most important thing is to drop the 3rd fireball on the correct tile:</p>
+<ul>
+<li>Tile <code>2</code> for vertical</li>
+<li>Tile <code>6</code> for horizontal</li>
+</ul>
+<p>Doing so will guide you naturally to the starting tile for <code>pt1</code>.</p>
+<p><img src="assets/imgs/grid_labelled.png" width=190></p>
+<p>Example: <a href="https://youtu.be/YgAF3C4EsrI">https://youtu.be/YgAF3C4EsrI</a></p>
+<h2 id="general-advice">General Advice</h2>
+<ul>
+<li>Fireball dodging is tricky, and it's easy to momentarily forget which direction you should be moving. This is almost entirely muscle memory, and it will come with practice.</li>
+<li>I'd also recommend deciding on a fixed kill order for the flares and sticking with it. Removing that decision from the gameplay will help free your attention.</li>
+<li>Finally: being in position to start <code>pt1</code> matters more than executing it perfectly. If your positioning is off, the resulting panic tends to snowball.</li>
+</ul>
+<h2 id="plugins">Plugins</h2>
+<p>Plugins used in vids/clips</p>
+<ul>
+<li>Blindfold (uncheck <code>Show Terrain</code>); skybox color <code>#5D4140</code></li>
+<li>Minimap hider</li>
+<li>Click minimap orbs (prevents clicking through them)</li>
+<li>Orb hider</li>
+<li>Ground object hider : <code>11847,11848,11849,56329,11850,56330,56331,56332,32941,56333,32942,32943,32944,32945,11985,32946,32947,32948,56334</code></li>
+</ul>
+</div>
+</div>
+<script>
+(function(){
+var ts=document.querySelectorAll('[data-tab]'),ps=document.querySelectorAll('[data-panel]');
+function go(id){for(var i=0;i<ts.length;i++){ts[i].classList.toggle('active',ts[i].dataset.tab===id);ps[i].classList.toggle('active',ps[i].dataset.panel===id);}history.replaceState(null,'','#'+id);}
+for(var i=0;i<ts.length;i++)ts[i].onclick=(function(t){return function(){go(t.dataset.tab)};})(ts[i]);
+var hh=location.hash.slice(1);go(hh&&document.querySelector('[data-panel="'+hh+'"]')?hh:ts[0].dataset.tab);
+})();
+</script>
+<script src="assets/grid-path.js"></script>
+</body>
+</html>
